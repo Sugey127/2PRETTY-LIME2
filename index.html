@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Lime</title>
+    <link rel="icon" href="assets/img/Logo.jpg"> <!--Icono de pestaña de la pagina-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="menu logo-nav">
+        <a href="index.html" class="logo">Pretty Lime</a>
+        <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+        <nav class="navigation">
+          <ul>
+            <li><a href="Ninios.html">Niños</a></li>
+            <li><a href="hombre.html">Hombre</a></li>
+            <li><a href="Mujer.html">Mujer</a></li>
+            <li><a href="index2.html">Cerrar secion</a></li>
+
+            <li class="car" >
+              <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg>
+                <div id="carrito" class="dropdown-menu">
+                  <table id="lista-carrito" class="table">
+                      <thead>
+                          <tr>
+                              <th>Imagen</th>
+                              <th>Nombre</th>
+                              <th>Precio</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="vaciar-carrito" class="button-vaciar">Vaciar Carrito</a>
+                  <a href="#" id="procesar-pedido" class="button-pedido">Procesar Compra</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="slider">
+      <ul>
+        <li><img src="https://centrocomerciallosangeles.es/wp-content/uploads/2017/10/springfield-600x221.jpg" alt="..."></li>
+        <li><img src="https://expresion-sonora.com/wp-content/uploads/2022/03/baggy-jeans-y-prendas-oversize-en-denim-protagonizaran-la-primavera-600x221.png" alt="..."></li>
+        <li><img src="https://www.vanguardia.com/binrepository/600x221/0c0/0d0/none/12204/NRNC/gal_galer005_VL93211_MG25857804.jpg" alt="..."></li>
+      </ul>
+    </div>
+<main>
+
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <img src="" alt="" class="modal-img" id="modal-img">
+          </div>
+          <div class="modal-boton" id="modal-boton">X</div>
+        </div>
+
+        <nav style="padding-left: 234px; height: 55px;">
+          <a href="Vista_Art_M1.html" class="button2">Blusa blanca con estampado</a>
+          <a href="Vista_Art_M2.html" class="button2">Vestido rojo</a>
+          <a href="Vista_Art_M7.html" class="button2">Blusa subliminal de gato</a> 
+          <a href="Vista_Art_H.html" class="button2">Camisa negra</a>
+          <a href="Vista_Art_H 7.html" class="button2">Chaqueta</a><br><br><br>
+          <div style="padding-left: 254px; height: 55px;">
+          <a href="Vista_Art_M8.html" class="button2">Falda gotica</a>
+          <a href="Vista_Art_H 6.html" class="button2">Pans</a>
+          <a href="Vista_Art_N 1.html" class="button2">Traje de marinerito</a>
+          </div>
+        </nav>
+        <br><br>
+
+        <div class="container-productos" id="lista-productos">
+          <div class="card">
+            <img src="https://ae01.alicdn.com/kf/HTB1FN9xaBSD3KVjSZFqq6A4bpXa8/Blusa-con-estampado-de-verano-2019-para-mujer-Blusa-con-estampado-de-flores-con-ribete-de.jpg_Q90.jpg_.webp" class="card-img">
+            <h5 >Blusa blanca con estampado</h5>
+            <p>$<small class="precio">52</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Agregar al carrito</a>
+          </div>
+
+          <div class="card">
+            <img src="https://vestidosglam.com/wp-content/uploads/2017/09/vestidos-rojos-para-una-noche-formal-30.jpg" class="card-img">
+            <h5>Vestido rojo</h5>
+            <p>$<small class="precio">214</small></p>
+            
+            <a href="#" class="button agregar-carrito" data-id="2">Agregar al carrito</a>
+          </div>
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51dAZy+6iYL.jpg" class="card-img">
+            <h5>Blusa subliminal de gato</h5>
+            <p>$<small class="precio">29</small></p>
+            <a href="#" class="button agregar-carrito" data-id="7">Agregar al carrito</a>
+          </div>
+
+          
+
+          <div class="card">
+            <img src="https://www.dhresource.com/0x0/f2/albu/g7/M00/A4/70/rBVaSVovjrGAfyQPAAEmOMym284650.jpg" class="card-img">
+            <h5>Camisa negra</h5>
+            <p>$<small class="precio">50.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Agregar al carrito</a>
+          </div>
+          <div class="card">
+            <img src="https://ae01.alicdn.com/kf/Hd028ef10f33b43b396969699a0f91ecfC/JDDTON-ropa-japonesa-para-hombre-traje-suelto-de-estilo-tradicional-prendas-de-vestir-exteriores-de-verano.jpg_Q90.jpg_.webp" class="card-img">
+            <h5>Chaqueta</h5>
+            <p>$<small class="precio">50.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Agregar al carrito</a>
+          </div>
+          <div class="card">
+            <img src="https://img.bestdealplus.com/ae04/kf/Hb6e1015800144f9a83d5c873c1c2d3f0u.jpg" class="card-img">
+            <h5>Falda gotica</h5>
+            <p>$<small class="precio">50</small></p>
+            <a href="#" class="button agregar-carrito" data-id="8">Agregar al carrito</a>
+          </div>
+
+          <div class="card">
+            <img src="https://img.joomcdn.net/03b0b2a777cb38791d3964724d93adaeaca8f018_original.jpeg " class="card-img">
+            <h5>Pans</h5>
+            <p>$<small class="precio">50.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Agregar al carrito</a>
+          </div>
+          <div class="card">
+            <img src="https://ae01.alicdn.com/kf/H198a44fb2a4f429f99c5fd901212594f0/Monos-de-retales-de-dibujos-animados-para-beb-s-ropa-infantil-de-moda-para-ni-os.jpg_Q90.jpg_.webp" class="card-img">
+            <h5>Traje de Marinerito</h5>
+            <p>$<small class="precio">50.00</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Agregar al carrito</a>
+          </div>
+          
+
+        </div>
+</main>
+  
+<br>
+<footer class="footer-section">
+  <div style="padding-left: 50px;">
+    <div>
+      <h2 class="page-header">Se parte de nuestro equipo</h2>
+    </div>
+    <br>
+    <p>
+            <img class="equipo" src="https://www.ventagy.com/wp-content/uploads/2020/02/highlight_image-scaled.jpg" alt="" style="width: 250px; height: 250px; border-radius: 150px; float: left; ">
+            <h4 style="padding-top: 40px; padding-left: 350px; padding-right: 50px;" class="equipo">Nuestro objetivo en común es reconocer la grandeza de las personas. Estamos convencidos de que trabajar en el lugar ideal,
+            de acuerdo a tus habilidades e intereses, es el primer paso en el camino hacia el éxito.
+            Te invitamos a ser parte de nuestro equipo <a href="login.html"> Unete a ahora.</a></h4>
+    </p><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <div class="copyright-area">
+      <div class="container-footer">
+          <div class="row-footer">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>Copyright &copy; 2020, todos los derechos reservados <a href="index.html">Pretty Lime</a></p>
+              </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="nosotros.html">Nosotros</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer> 
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script  src="assets/js/scripts.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/pedido.js"></script>
+    <script src="assets/js/compra.js"></script>
+</body>
+</html>
